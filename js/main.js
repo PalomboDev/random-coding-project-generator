@@ -49,13 +49,13 @@ projectsJSON = // Eventually this will be in a .json file
 ]
 `
 
-class Project {
-    constructor(name, description, source) {
-        this.name = name;
-        this.description = description;
-        this.source = source;
-    }
-}
+// class Project {
+//     constructor(name, description, source) {
+//         this.name = name;
+//         this.description = description;
+//         this.source = source;
+//     }
+// }
 
 const projects = JSON.parse(projectsJSON);
 
@@ -66,10 +66,19 @@ const generateButton = document.querySelector("#generate-button");
 let currentProject;
 
 function init() {
+    // for (project of JSON.parse(projectsJSON)) {
+    //     projects.push(new Project(project.name, project.description, project.source));
+    // }
+
     setNewProject();
 }
 
 function setNewProject() {
+    if (projects.length == 0) {
+        projectName.textContent = "No Projects Found"
+        return;
+    }
+
     let newProject;
 
     if (typeof currentProject !== 'undefined') {
