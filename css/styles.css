@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #2d39a1;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#main-title {
+    text-align: center;
+}
+
+#random-project-box {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    line-height: .5;
+}
+
+#random-project-name {
+    font-size: 4rem;
+    line-height: 1.1;
+    position: relative;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+#random-project-description {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    position: relative;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+#random-project-source {
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    text-align: right;
+    margin-right: 4em;
+}
+
+#generate-button {
+    position: fixed;
+    width: 12em;
+    display: inline-block;
+    left: 50%;
+    margin-left: -6em;
+    bottom: 150px;
+    border-radius: 4px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2d39a1;
+    padding: 15px 0;
+    transition: .5s ;
+}
+
+#generate-button:hover {
+    background-color: rgba(255,255,255,.25);
+}
+
+#generate-button:focus {
+    outline: none;
+}
+
+@media (max-width: 1300px) {
+    #random-project-name {
+        font-size: 3.5rem;
+    }
+
+    #random-project-description {
+        font-size: 2rem;
+    }
+
+    #random-project-source {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #random-project-name {
+        font-size: 3rem;
+    }
+
+    #random-project-description {
+        font-size: 1.5rem;
+    }
+
+    #random-project-source {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+    #random-project-name {
+        font-size: 2rem;
+    }
+
+    #random-project-description {
+        font-size: 1.5rem;
+    }
+
+    #random-project-source {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 460px) {
+    #random-project-name {
+        font-size: 1.8rem;
+    }
+
+    #random-project-description {
+        font-size: 1.2rem;
+    }
+
+    #random-project-source {
+        font-size: .8rem;
+    }
+}
