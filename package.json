@@ -1,0 +1,19 @@
+{
+  "name": "random-coding-project-generator",
+  "version": "1.0.0",
+  "description": "A random generator that gives you coding project ideas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalomboDev/random-coding-project-generator.git"
+  },
+  "author": "Colin Palombo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PalomboDev/random-coding-project-generator/issues"
+  },
+  "homepage": "https://github.com/PalomboDev/random-coding-project-generator#readme"
+}
