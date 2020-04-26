@@ -69,7 +69,7 @@ function setNewProject() {
 
     let newProject;
 
-    if (typeof currentProject !== 'undefined') {
+    if (isVariableDefined(currentProject)) {
         newProject = currentProject;
 
         while (newProject.name === currentProject.name) {
@@ -90,6 +90,10 @@ function setNewProject() {
 
 function getRandomProject() {
     return projects[Math.floor(Math.random() * projects.length)];
+}
+
+function isVariableDefined(variable) {
+    return typeof variable !== 'undefined';
 }
 
 generateButton.addEventListener("click", setNewProject);
