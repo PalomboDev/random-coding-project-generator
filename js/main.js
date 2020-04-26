@@ -49,14 +49,6 @@ projectsJSON = // Eventually this will be in a .json file
 ]
 `
 
-// class Project {
-//     constructor(name, description, source) {
-//         this.name = name;
-//         this.description = description;
-//         this.source = source;
-//     }
-// }
-
 const projects = JSON.parse(projectsJSON);
 
 const projectName = document.querySelector("#random-project-name");
@@ -66,10 +58,6 @@ const generateButton = document.querySelector("#generate-button");
 let currentProject;
 
 function init() {
-    // for (project of JSON.parse(projectsJSON)) {
-    //     projects.push(new Project(project.name, project.description, project.source));
-    // }
-
     setNewProject();
 }
 
